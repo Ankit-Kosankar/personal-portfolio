@@ -1,0 +1,35 @@
+/* src/styles/layout.css */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; /* Add padding for spacing */
+  background-color: #ac7c7c; /* Background color */
+}
+
+nav {
+  flex-grow: 1; /* Allow the nav to take available space */
+  text-align: right; /* Align text to the right */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Display items in a single line */
+  gap: 20px; /* Space between links */
+}
+
+nav ul li {
+  display: inline; /* Display list items inline */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Change to your preferred color */
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Change color on hover */
+}
