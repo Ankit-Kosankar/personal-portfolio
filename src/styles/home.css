@@ -1,0 +1,25 @@
+h1 , p {
+    color: aliceblue;
+}
+
+.profile-container {
+    display: flex; /* Use flexbox to align items side by side */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-text {
+    padding-right: 20px; /* Add some space between text and image */
+}
+
+.profile-image {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.profile-image img {
+    max-width: 80%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    display: flex;
+    flex-direction: row-reverse;
+}

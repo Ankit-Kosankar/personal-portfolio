@@ -1,0 +1,39 @@
+.nav-container {
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+.logo-img {
+    width: 4rem;
+    margin-left: 50%;
+} 
+
+header {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav-bar */
+    align-items: center; /* Center items vertically */
+    padding: 40px; /* Add some padding */
+}
+
+.nav-bar {
+    list-style-type: none; /* Remove default list styles */
+    display: flex; /* Use Flexbox for the nav items */
+    gap: 20px; /* Space between nav items */
+    margin-right: 10%;
+}
+
+
+
+.nav-bar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Set text color */
+    padding: 5px 10px; /* Add padding to links */
+}
+
+.nav-bar a:hover {
+    color: #007BFF; /* Change color on hover */
+}
