@@ -11,6 +11,11 @@
       <p>I thrive on solving complex problems and creating innovative solutions.</p>
       <p>My experience includes working with various </p> 
       <p>programming languages and AI frameworks.</p>
+
+      <div class="button-container">
+        <a href="/contact" class="btn primary-btn">Talk to Me</a>
+        <a href="/projects" class="btn secondary-btn">See My Work</a>
+      </div>
   </div>
   <div class="profile-image">
       <img src={profileImage} alt="Ankit Kosankar" />

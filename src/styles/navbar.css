@@ -1,6 +1,6 @@
 .nav-container {
     width: 100%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .logo {
@@ -37,3 +37,47 @@ header {
 .nav-bar a:hover {
     color: #007BFF; /* Change color on hover */
 }
+
+
+.nav-link {
+    background: linear-gradient(
+        45deg,
+        #ff6b6b,
+        #4ecdc4
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.nav-link:hover {
+    background-position: right center;
+    transform: scale(1.05);
+} 
