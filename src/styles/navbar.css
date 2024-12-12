@@ -1,5 +1,7 @@
 .nav-container {
-    width: 100%;
+    margin: 16px;
+    background-color: rgb(54, 46, 84);
+    border-radius: 10px;
     /* background-color: aliceblue; */
 }
 
@@ -9,7 +11,7 @@
 
 .logo-img {
     width: 4rem;
-    margin-left: 50%;
+    margin-left: 100%;
 } 
 
 header {
@@ -24,36 +26,69 @@ header {
     display: flex; /* Use Flexbox for the nav items */
     gap: 20px; /* Space between nav items */
     margin-right: 10%;
+
 }
 
 
 
-.nav-bar a {
-    text-decoration: none; /* Remove underline from links */
-    color: #000; /* Set text color */
-    padding: 5px 10px; /* Add padding to links */
-}
+.nav-bar a {    
+    content: '';
+    border-radius: 6px;
+    /* z-index: -1; */
+    text-decoration: none; 
+    /* padding: 5px 10px; */
+} 
 
 .nav-bar a:hover {
-    color: #007BFF; /* Change color on hover */
+    content: '';
+    border-radius: 8px;
+    /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1); */
+    /* z-index: -1; */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease;
 }
+
+/* .nav-bar a::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #2a2a2a;
+    border-radius: 6px;
+    z-index: -1;
+  } */
+
+  /* .nav-bar a::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    z-index: -1;
+    transition: all 0.3s ease;
+  } */
 
 
 .nav-link {
     background: linear-gradient(
         45deg,
-        #ff6b6b,
+        rgb(122, 113, 67),
         #4ecdc4
     );
     background-size: 200% auto;
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     transition: 0.5s ease;
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
     border-radius: 8px;
     position: relative;
+    color: white;
 }
 
 .nav-link::before {

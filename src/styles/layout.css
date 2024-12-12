@@ -9,12 +9,13 @@ html {
 .main-container,
 .footer-container {
   grid-column: 2;
+  
 }
 
 .content-container {
   display: grid;
   grid-template-columns: 15% 75% 10%;
-  background-color: rgba(18, 18, 18, 0.8);
+  background-color: rgb(90, 81, 131);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -22,3 +23,6 @@ html {
   margin: 1rem;
 }
 
+.website-container {
+  background-color: whitesmoke;
+}

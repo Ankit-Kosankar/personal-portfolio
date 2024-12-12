@@ -9,7 +9,7 @@
 <div class="app">
 <StarryNight />
 </div>
-<div class="container">
+<div class="website-container">
   <div class="nav-container">
     <header>
       <div class="logo">
