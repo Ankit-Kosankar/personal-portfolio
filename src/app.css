@@ -123,6 +123,7 @@ button:focus:not(:focus-visible) {
 
 .button-container {
 margin-top: 2rem;
+margin-bottom: 2rem;
 display: flex;
 gap: 2rem;
 justify-content: space-between;
