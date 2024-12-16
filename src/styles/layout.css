@@ -46,7 +46,7 @@ html {
 }
 
 .social-link {
-  color: #666;
+  color: #bcbbbb;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -57,7 +57,7 @@ html {
 
 .copyright {
   font-size: 0.9rem;
-  color: #666;
+  color: #bcbbbb;
 }
 
 /* Responsive adjustments */

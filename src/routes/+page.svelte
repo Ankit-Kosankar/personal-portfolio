@@ -1,10 +1,12 @@
 <script>
   import '../styles/home.css'; // Adjust the path as necessary
   import profileImage from '../lib/assets/images/profile-pic.svg.svg'
+	import Intoduction from '$lib/components/Intoduction.svelte';
 </script>
 
 <div class="profile-container">
   <div class="profile-text">
+       <!-- <Intoduction></Intoduction> -->
       <h1>Hi, I'm Ankit Kosankar, A Software Engineer and AI/ML Enthusiast.</h1>
       <p>With a strong background in software development and </p>
       <p>keen interest in artificial intelligence and machine learning, </p> 
