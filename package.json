@@ -37,6 +37,7 @@
 	},
 	"dependencies": {
 		"@dimforge/rapier3d-compat": "^0.14.0",
+		"@iconify/svelte": "^4.1.0",
 		"@theatre/studio": "^0.7.2"
 	}
 }
