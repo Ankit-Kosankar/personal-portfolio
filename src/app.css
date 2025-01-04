@@ -1,8 +1,16 @@
 @import '@fontsource/fira-mono';
 
-* {
+/* Add at the top of app.css */
+:root {
 	box-sizing: border-box;
-}
+  }
+  
+  *, *::before, *::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+  }
+  
 
 :root {
 	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
@@ -41,7 +49,7 @@ body {
   }
 
   
-body {
+/* body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
@@ -53,7 +61,7 @@ body {
 			rgba(255, 255, 255, 0) 100%
 		),
 		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
-}
+} */
 
 h1,
 h2,

@@ -1,0 +1,115 @@
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+  .sidebar {
+    color: white;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .profile img:hover {
+    transform: scale(1.1);
+  }
+
+  .profile h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  .social-links a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+  }
+
+  .skills {
+    margin: 20px 0;
+  }
+
+  .skills div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .skills div i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .info {
+    margin: 20px 0;
+  }
+
+  .info div {
+    margin-bottom: 10px;
+  }
+
+  .resume-btn {
+    display: block;
+    background: #38bdf8;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+
+  .resume-btn:hover {
+    background: #1d4ed8;
+  }
+
+  @media (max-width: 1200px) {
+    .website-container {
+      grid-template-columns: 25% 75%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .website-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .grid-sidebar {
+      display: none; /* or implement a mobile menu */
+    }
+    
+    .content-container {
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+  }

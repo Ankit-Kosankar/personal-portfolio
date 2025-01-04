@@ -3,16 +3,36 @@
   import { quintOut } from 'svelte/easing';
   import '../styles/layout.css'; // Adjust the path as necessary
   import '../styles/navbar.css';
+  // import '../styles/sidbar.scss';
   import logo from '../lib/assets/images/skull.svg';
 	import '../app.css';
 	import StarryNight from '$lib/components/space/StarryNight.svelte';
+	import SideBar from '$lib/components/SideBar.svelte';
 </script>
+
+<style>
+  :global(:root) {
+    box-sizing: border-box;
+  }
+
+  :global(*, *::before, *::after) {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+</style>
 
 <div class="app">
 <StarryNight />
 </div>
-<div class="website-container">
-  <div class="nav-container">
+<div class="website-container grid-container">
+  
+  <div class="sidebar-container grid-sidebar">
+    <SideBar>
+    </SideBar>
+  </div>
+
+  <div class="nav-container grid-navbar">
     <header>
       <div class="logo">
         <img  class="logo-img" src={logo} alt="Logo"> <!-- Replace with actual logo path -->
@@ -28,7 +48,7 @@
   </div>
 
   <div class="content-container">
-    <div class="main-container">
+    <div class="main-container grid-main-container">
       <main>
         <slot />  
       </main>

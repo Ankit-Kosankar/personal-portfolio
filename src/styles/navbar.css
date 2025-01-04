@@ -1,7 +1,7 @@
 .nav-container {
-    margin: 16px;
+    /* margin: 16px; */
     background-color: rgb(54, 46, 84);
-    border-radius: 10px;
+    border-radius: 50px;
     /* background-color: aliceblue; */
 }
 
@@ -57,19 +57,6 @@ header {
     background: #2a2a2a;
     border-radius: 6px;
     z-index: -1;
-  } */
-
-  /* .nav-bar a::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
-    z-index: -1;
-    transition: all 0.3s ease;
   } */
 
 

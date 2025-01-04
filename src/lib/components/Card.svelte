@@ -6,7 +6,7 @@
 </script>
 
 <style lang="scss">
-    @import '../../styles/card.scss';
+    @use '../../styles/card.scss' as *;
 </style>
 
 <div class="project-card">
