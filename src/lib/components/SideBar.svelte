@@ -2,16 +2,18 @@
   import { fade } from 'svelte/transition';
   import { scale } from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
+  import myImage from '$lib/assets/images/social-image.png';
+  import '@fortawesome/fontawesome-free/css/all.min.css';
 </script>
 
 <style lang="scss">
     @use '../../styles/sidebar.scss' as *;
-    @use '@fortawesome/fontawesome-free/css/all.min.css';
+    // @use '@fortawesome/fontawesome-free/css/all.min.css';
 </style>
 
 <div class="sidebar" in:fade>
     <div class="profile">
-      <img src="" alt="" />
+      <img src={myImage} alt="" />
       <h3>Ankit</h3>
     </div>
   

@@ -40,7 +40,7 @@
       <nav class="nav-bar">
           <li><a class="nav-link" href="about">About</a></li>
           <li><a class="nav-link" href="blog">Blog</a></li>
-          <li><a class="nav-link" href="resume">Resume</a></li>
+          <!-- <li><a class="nav-link" href="resume">Resume</a></li> -->
           <li><a class="nav-link" href="projects">Projects</a></li>
           <li><a class="nav-link" href="contact-me">Inquire-Now</a></li>
       </nav>
