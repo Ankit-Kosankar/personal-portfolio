@@ -1,11 +1,41 @@
 <script>
     // Script block can remain empty unless you want to add interactivity later
+    import IconCloud from "../../lib/components/IconCloud.svelte";
+    import IconSphere from "../../lib/components/IconCloud.svelte";
+
+  const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
 </script>
-
-
-
-
-<!-- Add Font Awesome for Icons -->
 
 
 <style>
@@ -50,6 +80,8 @@
     .skills-section ul {
         list-style-type: none;
         padding: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .skills-section li {
@@ -61,6 +93,8 @@
         transition: transform 0.3s ease, background-color 0.3s ease;
         padding: 5px;
         border-radius: 6px;
+        flex: 1 1 45%;
+        box-sizing: border-box;
     }
 
     .skills-section li:hover {
@@ -140,7 +174,7 @@
     </div>
 
     <div class="skills-section">
-        <h3>Technical Expertise Highlights</h3>
+        <h3>Skills :</h3>
 
         <h4>Frontend Technologies</h4>
         <ul>
@@ -161,6 +195,10 @@
             <li><i class="fas fa-server"></i> Server-Side Programming</li>
         </ul>
     </div>
+
+    <IconSphere></IconSphere>
+    <IconCloud iconSlugs={slugs}/>
+      
 </div>
 
 

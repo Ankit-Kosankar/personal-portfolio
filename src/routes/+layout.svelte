@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { scale } from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
   import '../styles/layout.css'; // Adjust the path as necessary
@@ -8,6 +8,18 @@
 	import '../app.css';
 	import StarryNight from '$lib/components/space/StarryNight.svelte';
 	import SideBar from '$lib/components/SideBar.svelte';
+
+
+  import { onMount } from "svelte";
+  import { fade } from "svelte/transition";
+
+  let activePage = "home";
+
+  const navigate = (page:string) => {
+    activePage = page;
+    // Add logic for routing if using a router
+  };
+
 </script>
 
 <style>
@@ -38,11 +50,60 @@
         <img  class="logo-img" src={logo} alt="Logo"> <!-- Replace with actual logo path -->
     </div>
       <nav class="nav-bar">
-          <li><a class="nav-link" href="about">About</a></li>
-          <li><a class="nav-link" href="blog">Blog</a></li>
-          <!-- <li><a class="nav-link" href="resume">Resume</a></li> -->
-          <li><a class="nav-link" href="projects">Projects</a></li>
-          <li><a class="nav-link" href="contact-me">Inquire-Now</a></li>
+        <li>
+          <a
+            class="nav-link {activePage === 'home' ? 'active' : ''}"
+            href="/"
+            on:click={() => navigate("home")}
+          >
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link {activePage === 'about' ? 'active' : ''}"
+            href="/about"
+            on:click={() => navigate("about")}
+          >
+            <i class="fa-solid fa-user"></i> About
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link {activePage === 'blog' ? 'active' : ''}"
+            href="/blog"
+            on:click={() => navigate("blog")}
+          >
+            <i class="fa-solid fa-blog"></i> Blog
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link {activePage === 'skills' ? 'active' : ''}"
+            href="/skills"
+            on:click={() => navigate("skills")}
+          >
+            <i class="fa-solid fa-tools"></i> Skills
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link {activePage === 'projects' ? 'active' : ''}"
+            href="/projects"
+            on:click={() => navigate("projects")}
+          >
+            <i class="fa-solid fa-briefcase"></i> Projects
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link {activePage === 'contactme' ? 'active' : ''}"
+            href="/contactme"
+            on:click|preventDefault={() => navigate("contactme")}
+          >
+            <i class="fa-solid fa-envelope"></i> Inquire Now
+          </a>
+        </li>
       </nav>
     </header>
   </div>

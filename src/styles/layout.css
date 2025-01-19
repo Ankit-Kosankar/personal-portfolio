@@ -10,14 +10,14 @@
   grid-template-columns: 0fr;
   padding: 2rem;
   margin: 20px;
-  background-color: rgb(90, 81, 131);
+  background-color: rgb(245, 245, 245);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
  }
 
  .sidebar-container {
-  background-color: rgb(90, 81, 131);
+  background-color: rgb(245, 245, 245);
   margin: 20px;
   padding: 20px;
  }

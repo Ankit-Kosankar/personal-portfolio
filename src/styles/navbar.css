@@ -1,81 +1,61 @@
 .nav-container {
-    /* margin: 16px; */
-    background-color: rgb(54, 46, 84);
-    border-radius: 50px;
-    /* background-color: aliceblue; */
+    background-color: whitesmoke;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .logo {
-    margin-left: 10%;
+    margin-left: 2rem; /* Adjusted for better alignment */
 }
 
 .logo-img {
     width: 4rem;
-    margin-left: 100%;
-} 
+    margin-left: 0; /* Center within the logo container */
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* Subtle hover effect on logo */
+}
 
 header {
     display: flex; /* Use Flexbox for layout */
     justify-content: space-between; /* Space between logo and nav-bar */
     align-items: center; /* Center items vertically */
-    padding: 40px; /* Add some padding */
+    padding: 20px 5%; /* Add some padding and use percentages for responsive design */
 }
 
 .nav-bar {
     list-style-type: none; /* Remove default list styles */
     display: flex; /* Use Flexbox for the nav items */
-    gap: 20px; /* Space between nav items */
-    margin-right: 10%;
-
+    gap: 1.5rem; /* Space between nav items */
+    margin-right: 2rem;
 }
 
-
-
-.nav-bar a {    
-    content: '';
-    border-radius: 6px;
-    /* z-index: -1; */
-    text-decoration: none; 
-    /* padding: 5px 10px; */
-} 
+.nav-bar a {
+    text-decoration: none;
+    color: black; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
 .nav-bar a:hover {
-    content: '';
-    border-radius: 8px;
-    /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1); */
-    /* z-index: -1; */
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease;
+    transform: scale(1.05);
 }
 
-/* .nav-bar a::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    background: #2a2a2a;
-    border-radius: 6px;
-    z-index: -1;
-  } */
-
-
 .nav-link {
-    background: linear-gradient(
-        45deg,
-        rgb(122, 113, 67),
-        #4ecdc4
-    );
+    background: linear-gradient(to right top, #3e8bff, #00a6f9, #001ec0, #0600b5, #612dae);
     background-size: 200% auto;
     background-clip: text;
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-    transition: 0.5s ease;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.5s ease, transform 0.3s ease;
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
     border-radius: 8px;
     position: relative;
-    color: white;
+    font-weight: 500; /* Make text slightly bolder */
 }
 
 .nav-link::before {
@@ -87,7 +67,7 @@ header {
     bottom: 0;
     border-radius: 8px;
     padding: 2px;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(to right top, #3e8bff, #00a6f9, #001ec0, #0600b5, #612dae);
     -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
@@ -101,5 +81,9 @@ header {
 
 .nav-link:hover {
     background-position: right center;
-    transform: scale(1.05);
-} 
+    transform: scale(1.1);
+}
+
+.nav-link:active {
+    transform: scale(1); /* Subtle feedback on click */
+}

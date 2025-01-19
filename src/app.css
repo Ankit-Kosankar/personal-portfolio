@@ -33,7 +33,9 @@
 	font-family: 'Helvetica Neue';
 	/* src: url('../public/fonts/HelveticaNeue.ttf') format('truetype');  Adjust path and format as needed */
 /* } */ 
-  
+  html {
+	background-color:#e6e5ff; 
+  }
   /* Use the font in your styles */
 .my-text {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -44,7 +46,7 @@ body {
 	font-family: 'Helvetica Neue', sans-serif; /* Assuming "Helvetica Neue" is used */
 	font-size: 16px;
 	line-height: 1.5;
-	color: #333; /* Dark gray color */
+	color: rgb(0, 0, 0);
 	margin: 0;
   }
 
@@ -177,8 +179,8 @@ top: -2px;
 left: -2px;
 right: -2px;
 bottom: -2px;
-border-radius: 8px;
-background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+border-radius: 2px;
+background: linear-gradient(to right top, rgb(62, 139, 255), rgb(0, 166, 249), rgb(0, 30, 192), rgb(6, 0, 181), rgb(97, 45, 174));
 z-index: -1;
 transition: all 0.3s ease;
 }
@@ -194,7 +196,7 @@ top: 2px;
 left: 2px;
 right: 2px;
 bottom: 2px;
-background: #2a2a2a;  /* Dark background */
+/* background: #2a2a2a;  Dark background */
 border-radius: 6px;
 z-index: -1;
 }
@@ -210,7 +212,7 @@ top: 2px;
 left: 2px;
 right: 2px;
 bottom: 2px;
-background: #2a2a2a;  /* Dark background */
+/* background: #2a2a2a;  Dark background */
 border-radius: 6px;
 z-index: -1;
 }
