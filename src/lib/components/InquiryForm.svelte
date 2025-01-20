@@ -76,8 +76,9 @@ textarea {
   color: #888;
 }
 </style>
-
-<h3>Inquire Now</h3>
+<div style="padding-bottom: 20px;">
+  <h3>Have Something on Mind , Leave Me a Message</h3>
+</div>
 <form class="contact-form">
 <div class="form-group">
   <label for="fullName">Full Name:</label>
