@@ -42,12 +42,13 @@
     .about-container {
         font-family: Arial, sans-serif;
         line-height: 1.6;
-        padding: 20px;
+        padding: 2px;
+        padding-top: 20px;
         max-width: 800px;
-        margin: 0 auto;
-        background-color: #f9f9f9;
+        /* margin: 0 auto; */
+        /* background-color: #f9f9f9; */
         border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     }
 
     .header {
@@ -155,9 +156,38 @@
     }
 </style>
 
+<div class="skills-section">
+    <h3>Skills :</h3>
+
+    <h4>Frontend Technologies</h4>
+    <ul>
+        <li><i class="fab fa-svelte"></i> Svelte</li>
+        <li><i class="fab fa-react"></i> React</li>
+        <li><i class="fab fa-angular"></i> Angular</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fas fa-palette"></i> SCSS</li>
+        <li><i class="fas fa-cube"></i> Three.js</li>
+    </ul>
+
+    <h4>Backend Technologies</h4>
+    <ul>
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fas fa-leaf"></i> Spring Boot</li>
+        <li><i class="fab fa-node"></i> Node.js</li>
+        <li><i class="fas fa-server"></i> Server-Side Programming</li>
+    </ul>
+</div>
+
+<!-- <IconSphere></IconSphere>
+<IconCloud iconSlugs={slugs}/> -->
+  
+
+
 <div class="about-container">
     <div class="header">
-        <h3>HI , I AM ANKIT KOSANKAR</h3>
+        <!-- <h3>HI , I AM ANKIT KOSANKAR</h3> -->
+        <h3>Background And Experience</h3>
         <p>
             A passionate Software Engineer with 2.5+ years of professional experience 
             transforming complex challenges into elegant digital solutions.
@@ -173,33 +203,7 @@
         </p>
     </div>
 
-    <div class="skills-section">
-        <h3>Skills :</h3>
-
-        <h4>Frontend Technologies</h4>
-        <ul>
-            <li><i class="fab fa-svelte"></i> Svelte</li>
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fab fa-angular"></i> Angular</li>
-            <li><i class="fab fa-js-square"></i> JavaScript</li>
-            <li><i class="fab fa-css3-alt"></i> CSS</li>
-            <li><i class="fas fa-palette"></i> SCSS</li>
-            <li><i class="fas fa-cube"></i> Three.js</li>
-        </ul>
-
-        <h4>Backend Technologies</h4>
-        <ul>
-            <li><i class="fab fa-java"></i> Java</li>
-            <li><i class="fas fa-leaf"></i> Spring Boot</li>
-            <li><i class="fab fa-node"></i> Node.js</li>
-            <li><i class="fas fa-server"></i> Server-Side Programming</li>
-        </ul>
-    </div>
-
-    <IconSphere></IconSphere>
-    <IconCloud iconSlugs={slugs}/>
-      
-</div>
+</div>    
 
 
 <!-- <style>

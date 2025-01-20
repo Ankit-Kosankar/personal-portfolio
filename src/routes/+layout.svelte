@@ -47,7 +47,8 @@
   <div class="nav-container grid-navbar">
     <header>
       <div class="logo">
-        <img  class="logo-img" src={logo} alt="Logo"> <!-- Replace with actual logo path -->
+        <div class="logo">Ankit.</div>
+        <!-- <img  class="logo-img" src={logo} alt="Logo"> Replace with actual logo path -->
     </div>
       <nav class="nav-bar">
         <li>
@@ -77,7 +78,7 @@
             <i class="fa-solid fa-blog"></i> Blog
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a
             class="nav-link {activePage === 'skills' ? 'active' : ''}"
             href="/skills"
@@ -85,7 +86,7 @@
           >
             <i class="fa-solid fa-tools"></i> Skills
           </a>
-        </li>
+        </li> -->
         <li>
           <a
             class="nav-link {activePage === 'projects' ? 'active' : ''}"

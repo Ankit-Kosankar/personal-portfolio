@@ -87,3 +87,42 @@ header {
 .nav-link:active {
     transform: scale(1); /* Subtle feedback on click */
 }
+
+
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    cursor: pointer;
+  }
+
+  .logo::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.4s ease;
+  }
+
+  .logo:hover::after {
+    width: 100%;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .logo {
+    animation: fadeIn 2s ease;
+  }

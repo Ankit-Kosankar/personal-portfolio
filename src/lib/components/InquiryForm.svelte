@@ -77,7 +77,7 @@ textarea {
 }
 </style>
 
-<h3>Contact Us</h3>
+<h3>Inquire Now</h3>
 <form class="contact-form">
 <div class="form-group">
   <label for="fullName">Full Name:</label>
