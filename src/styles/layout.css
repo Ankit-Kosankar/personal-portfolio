@@ -25,11 +25,10 @@
 
 .website-container {
   display: grid;
-  grid-template-columns: 410px 1fr;
 }
 
 .grid-navbar {
-  grid-column: 1 / 3;
+  /* grid-column: 1 / 3; */
   /* width: 100%; */
   height: 100%;
   background-color: #f0f0f0;
@@ -81,31 +80,6 @@
   font-size: 0.9rem;
   color: #bcbbbb;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer {
-    padding: 1.5rem;
-    gap: 1rem;
-  }
-  
-  .social-icons {
-    gap: 1rem;
-  }
-}
-
-
-/* Add these breakpoints */
-@media (max-width: 1200px) {
-  .website-container {
-    grid-template-columns: 25% 75%;
-  }
-}
-
-@media (max-width: 768px) {
-  .website-container {
-    grid-template-columns: 1fr;
-  }
   
   .grid-sidebar {
     display: none; /* or implement a mobile menu */
@@ -115,4 +89,5 @@
     padding: 1rem;
     margin: 0.5rem;
   }
-}
+
+  

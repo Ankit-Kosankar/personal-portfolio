@@ -17,9 +17,9 @@
 }
 
 .profile-image img {
-    max-width: 80%; /* Make sure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
+    /*max-width: auto;  Make sure the image is responsive */
+    /*height: auto;  Maintain aspect ratio */
     border-radius: 10px; /* Optional: Add rounded corners to the image */
-    display: flex;
-    flex-direction: row-reverse;
+    /* display: flex;
+    flex-direction: row-reverse; */
 }

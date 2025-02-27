@@ -168,7 +168,7 @@
   <div>
     <h3>
     <i style= "color:black; padding: 10px;">
-      Services
+      Services I offer
     </i>
   </h3>
   </div>
