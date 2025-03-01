@@ -2,60 +2,32 @@
     background-color: whitesmoke;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
     position: sticky;
-    top: 0;
     z-index: 1000; /* Ensure it stays above other elements */
 }
 
-.logo {
-    margin-left: 2rem; /* Adjusted for better alignment */
-}
-
-.logo-img {
-    width: 4rem;
-    margin-left: 0; /* Center within the logo container */
-    transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-    transform: scale(1.1); /* Subtle hover effect on logo */
-}
-
-header {
-    display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Space between logo and nav-bar */
-    align-items: center; /* Center items vertically */
-    padding: 20px 5%; /* Add some padding and use percentages for responsive design */
-}
 
 .nav-bar {
-    list-style-type: none; /* Remove default list styles */
-    display: flex; /* Use Flexbox for the nav items */
-    gap: 1.5rem; /* Space between nav items */
-    margin-right: 2rem;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: black; 
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-bar a:hover {
-    transform: scale(1.05);
+    list-style-type: none;
+    display: flex; 
+    gap: 1.5rem; 
+    margin : 1rem;
+    justify-content: space-between;
 }
 
 .nav-link {
     background: linear-gradient(to right top, #3e8bff, #00a6f9, #001ec0, #0600b5, #612dae);
-    background-size: 200% auto;
-    background-clip: text;
+    /* background-size: 200% auto; */
+    /* background-clip: text; */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;   /*adjust the coor of the text*/
     transition: background-position 0.5s ease, transform 0.3s ease;
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
+    /* padding: 0.5rem 1rem; */
+    border: 0.5px solid transparent;
     border-radius: 8px;
-    position: relative;
-    font-weight: 500; /* Make text slightly bolder */
+    /* position: relative; */
+    font-weight: 500;
+    font-size: 1.5rem;
+
 }
 
 .nav-link::before {
@@ -79,17 +51,7 @@ header {
     pointer-events: none;
 }
 
-.nav-link:hover {
-    background-position: right center;
-    transform: scale(1.1);
-}
-
-.nav-link:active {
-    transform: scale(1); /* Subtle feedback on click */
-}
-
-
-
+/*logo related animation and all*/
 .logo {
     font-family: 'Great Vibes', cursive;
     font-size: 4rem;

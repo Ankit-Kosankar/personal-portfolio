@@ -1,30 +1,37 @@
 @import '@fontsource/fira-mono';
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
 	box-sizing: border-box;
-  }
-  
-  *, *::before, *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-  }
-
-  :global(*) {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
+	font-size: 16px;
 	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
-	/* --color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%); */
-	/* --color-theme-1: #ff3e00;
-	--color-theme-2: #4075a6; */
 	--color-text: rgba(0, 0, 0, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -32,185 +39,202 @@
 	color: var(--color-text);
 }
 
-html {
-	background-color:#e6e5ff; 
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-  }
-
-  body {
-	font-family: 'Helvetica Neue', sans-serif; /* Assuming "Helvetica Neue" is used */
-	font-size: 16px;
-	line-height: 1.5;
-	color: rgb(0, 0, 0);
-	margin: 0;
-  }
-
-  .container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-  }
-
-  
-
-/* global.css or component's <style> tag */
-/* @font-face {
-	font-family: 'Helvetica Neue';
-	/* src: url('../public/fonts/HelveticaNeue.ttf') format('truetype');  Adjust path and format as needed */
-/* } */ 
-  
-  /* Use the font in your styles */
-.my-text {
-	font-family: 'Helvetica Neue', Arial, sans-serif;
-	/* Other styles from the provided CSS */
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
+.sidebar {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 200px;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  background-color: #333;
+color: white;
+  padding: 1rem;
+}
 
+.main-content {
+  margin-top: var(--header-height);
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--footer-height);
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Container and Content Styles */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.content {
+  margin-top: 20px;
+  padding: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1,
 h2,
 p {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 a {
-	color: var(--color-theme-1);
-	text-decoration: none;
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 h2 {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--color-text);
+  font-size: 16px;
+  font-family: var(--font-mono);
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+  padding: 0.5em;
+  overflow-x: auto;
+  color: var(--color-text);
 }
 
-
-
 .text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
+  display: flex;
+  max-width: 48rem;
+  flex: 0.6;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 input,
 button {
-	font-size: inherit;
-	font-family: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 button:focus:not(:focus-visible) {
-	outline: none;
+  outline: none;
 }
 
-/* @media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
-} */
+/* Visually Hidden Styles */
 
 .visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: auto;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
-  
+/* Button Styles */
 
 .button-container {
-margin-top: 2rem;
-margin-bottom: 2rem;
-display: flex;
-gap: 2rem;
-justify-content: space-between;
-max-width: 400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 400px;
 }
 
 .btn {
-padding: 0.8rem 1.5rem;
-border-radius: 8px;
-text-decoration: none;
-font-weight: 600;
-transition: all 0.3s ease;
-position: relative;
-background: transparent;
-z-index: 1;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  background: transparent;
+  z-index: 1;
 }
 
 .btn::before {
-content: '';
-position: absolute;
-top: -2px;
-left: -2px;
-right: -2px;
-bottom: -2px;
-border-radius: 2px;
-background: linear-gradient(to right top, rgb(62, 139, 255), rgb(0, 166, 249), rgb(0, 30, 192), rgb(6, 0, 181), rgb(97, 45, 174));
-z-index: -1;
-transition: all 0.3s ease;
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 2px;
+  background: linear-gradient(to right top, rgb(62, 139, 255), rgb(0, 166, 249), rgb(0, 30, 192), rgb(6, 0, 181), rgb(97, 45, 174));
+  z-index: -1;
+  transition: all 0.3s ease;
 }
 
 .primary-btn {
-color: white;
+  color: white;
 }
 
 .primary-btn::after {
-content: '';
-position: absolute;
-top: 2px;
-left: 2px;
-right: 2px;
-bottom: 2px;
-/* background: #2a2a2a;  Dark background */
-border-radius: 6px;
-z-index: -1;
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  /* background: #2a2a2a; */
+  border-radius: 6px;
+  z-index: -1;
 }
 
 .secondary-btn {
-color: white;
+  color: white;
 }
 
 .secondary-btn::after {
-content: '';
-position: absolute;
-top: 2px;
-left: 2px;
-right: 2px;
-bottom: 2px;
-/* background: #2a2a2a;  Dark background */
-border-radius: 6px;
-z-index: -1;
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  /* background: #2a2a2a; */
+  border-radius: 6px;
+  z-index: -1;
 }
 
 .btn:hover::before {
-transform: scale(1.05);
-filter: brightness(1.2);
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 .btn:hover::after {
-background: #333333;  /* Slightly lighter on hover */
+  background: #333333;
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.btn:hover::after {
+  background: #333333;
 }

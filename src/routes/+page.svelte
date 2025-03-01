@@ -1,7 +1,6 @@
 <script>
   import '../styles/home.css'; // Adjust the path as necessary
   import profileImage from '../lib/assets/images/profile-pic.svg.svg'
-	import Intoduction from '$lib/components/Intoduction.svelte';
 </script>
 
 <div class="profile-container">
@@ -20,6 +19,6 @@
       </div>
   </div>
   <div class="profile-image">
-      <img src={profileImage} alt="Ankit Kosankar" />
+      <!-- <img src={profileImage} alt="Ankit Kosankar" /> -->
   </div>
 </div>
